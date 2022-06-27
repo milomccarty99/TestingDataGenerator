@@ -1,0 +1,14 @@
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.exe
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.deps.json
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.runtimeconfig.json
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.runtimeconfig.dev.json
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.dll
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\bin\Debug\netcoreapp3.1\RandomDataGenerator.pdb
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.csproj.AssemblyReference.cache
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.AssemblyInfoInputs.cache
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.AssemblyInfo.cs
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.csproj.CoreCompileInputs.cache
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.dll
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.pdb
+C:\Users\zoomz\source\repos\RandomDataGenerator\RandomDataGenerator\obj\Debug\netcoreapp3.1\RandomDataGenerator.genruntimeconfig.cache
