@@ -35,9 +35,79 @@ namespace RandomDataGenerator
         //double array of values between high and low.
         //float array of values between high and low.
 
-        SchedulingInfo ScheduleFinishMergeSort(SchedulingInfo sched)
+        public SchedulingInfo ScheduleFinishMergeSort(SchedulingInfo sched)
         {
-            return sched;
+            if (sched.length <= 1) //base case 
+                return sched;
+
+            // recursive case
+            int leftLength = sched.length / 2;
+            int rightLength = sched.length - leftLength;
+            SchedulingInfo left = new SchedulingInfo(leftLength);
+            SchedulingInfo right = new SchedulingInfo(rightLength);
+            int leftCount = 0, rightCount = 0, schedCount = 0;
+            for (int i = 0; i < leftLength; i++)
+            {
+                left.s[i] = sched.s[schedCount];
+                left.f[i] = sched.f[schedCount];
+                left.inc[i] = sched.inc[schedCount];
+                schedCount++;
+            }
+            for(int j = 0; j < rightLength; j++)
+            {
+                right.s[j] = sched.s[schedCount];
+                right.f[j] = sched.f[schedCount];
+                right.inc[j] = sched.inc[schedCount];
+                schedCount++;
+            }
+            left = ScheduleFinishMergeSort(left);
+            right = ScheduleFinishMergeSort(right);
+
+            return Merge(left, right);
+
+        }
+
+        SchedulingInfo Merge(SchedulingInfo left, SchedulingInfo right)
+        {
+            SchedulingInfo result = new SchedulingInfo(left.length + right.length);
+            int leftCount = 0, rightCount = 0;
+            for(int i = 0; i < result.length; i++)
+            {
+                if(leftCount < left.length && rightCount < right.length)
+                {
+                    if (left.f[leftCount] <= right.f[rightCount])
+                    {
+                        //transfter elements of left at leftCount
+                        result.f[i] = left.f[leftCount];
+                        result.s[i] = left.s[leftCount];
+                        result.inc[i] = left.inc[leftCount];
+                        leftCount++;
+                    }
+                    else
+                    {
+                        result.f[i] = right.f[rightCount];
+                        result.s[i] = right.s[rightCount];
+                        result.inc[i] = right.inc[rightCount];
+                        rightCount++;
+                    }
+                }
+                else if (leftCount < left.length)
+                {
+                    result.f[i] = left.f[leftCount];
+                    result.s[i] = left.s[leftCount];
+                    result.inc[i] = left.inc[leftCount];
+                    leftCount++;
+                }
+                else if (rightCount < right.length)
+                {
+                    result.f[i] = right.f[rightCount];
+                    result.s[i] = right.s[rightCount];
+                    result.inc[i] = right.inc[rightCount];
+                    rightCount++;
+                }
+            }
+
+            return result;
         }
 }
 

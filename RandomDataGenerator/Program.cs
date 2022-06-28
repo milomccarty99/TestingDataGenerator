@@ -8,9 +8,18 @@ namespace RandomDataGenerator
         {
             TestingData td = new TestingData(new Random());
             SchedulingInfo testSchedule = td.GenerateRandomSchedule(50, 30);
-            testSchedule.inc[1] = true;
             VisualizeSchedule(testSchedule);
-            SwapFirstTwoInTestSchedule(testSchedule);
+            testSchedule = td.ScheduleFinishMergeSort(testSchedule);
+            testSchedule.inc[0] = true;
+            int recentFin = testSchedule.f[0];
+            for(int i = 0; i< testSchedule.length; i++)
+            {
+                if(testSchedule.s[i]> recentFin)
+                {
+                    recentFin = testSchedule.f[i];
+                    testSchedule.inc[i] = true;
+                }
+            }
             VisualizeSchedule(testSchedule);
         }
 
