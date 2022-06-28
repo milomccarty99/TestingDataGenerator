@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RDrheTMpPHn7XqCe5LueqZyL0sO4tWcoot0VUZUf36PnSvDptUjB27wchMLlYT6FcT6kQSjtE184oizuIh9PcA==",
+  "dgSpecHash": "Q3eynqOMlLU8supgE2sz3Dom5ZqkzpoiQkfQ/zi0u+YhhXyTXK6WciHwDLThghS6QvzOdSll3iZpPnG3vrj72g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zoomz\\source\\repos\\RandomDataGenerator\\RandomDataGenerator\\RandomDataGenerator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/milo/Repos/TestingDataGenerator/RandomDataGenerator/RandomDataGenerator.csproj",
+  "expectedPackageFiles": [
+    "/home/milo/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/milo/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/milo/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.26/microsoft.netcore.app.host.linux-x64.3.1.26.nupkg.sha512"
+  ],
   "logs": []
 }

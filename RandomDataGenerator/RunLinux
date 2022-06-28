@@ -1,0 +1,7 @@
+#mono CS compiler
+mcs *.cs
+#mono run generated image Program.exe
+mono Program.exe
+#delete built image
+rm Program.exe
+
