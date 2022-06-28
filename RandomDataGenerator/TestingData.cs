@@ -6,9 +6,6 @@ namespace RandomDataGenerator
 {
     class TestingData
     {
-        int highRange;
-        int lowRange;
-        int length;
         Random rand;
         public TestingData(Random random)
         {
@@ -45,7 +42,7 @@ namespace RandomDataGenerator
             int rightLength = sched.length - leftLength;
             SchedulingInfo left = new SchedulingInfo(leftLength);
             SchedulingInfo right = new SchedulingInfo(rightLength);
-            int leftCount = 0, rightCount = 0, schedCount = 0;
+            int schedCount = 0;
             for (int i = 0; i < leftLength; i++)
             {
                 left.s[i] = sched.s[schedCount];
